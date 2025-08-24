@@ -27,6 +27,6 @@ async function bootstrap() {
   app.enableCors();
   // 👇 设置全局前缀
   app.setGlobalPrefix('api');
-  await app.listen(3000, '0.0.0.0');
+  await app.listen(process.env.LISTENPORT);
 }
 bootstrap();
